@@ -588,5 +588,25 @@
     <script src="js/smoothscroll.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
+    <script> function myFunction()
+	    {
+		    var dots = document.getElementsById('dots');
+		    var moretext = document.getElementsById('more');
+		    var mybtn = document.getElementsById('myBtn');
+		    
+		    if(dots.style.display === 'none')
+		    {
+			    dots.style.display = 'inline';
+			    moretext.style.display = 'none';
+			    mybtn.innerHTML = "Read more";
+		    }
+		    else
+		    {
+			    dots.style.display = 'none';
+			    moretext.style.display = 'inline';
+			    mybtn.innerHTML = "Read less";
+		    }
+	    }
+	</script>
   </body>
 </html>
